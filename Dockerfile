@@ -19,7 +19,6 @@ WORKDIR /srv/nbgrader
 RUN pip3.4 install flit
 RUN FLIT_ROOT_INSTALL=1 flit install --env
 RUN flit wheel
-RUN pip3.4 uninstall -y nbgrader
 RUN pip3.4 install dist/nbgrader*
 RUN pip2.7 install dist/nbgrader*
 

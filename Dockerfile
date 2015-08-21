@@ -11,8 +11,8 @@ RUN pip3.4 install scikit-learn==0.15
 RUN pip3.4 install ipywidgets
 
 # Install nbgrader
-RUN pip3.4 install nbgrader
-RUN pip2.7 install nbgrader
+RUN pip3.4 install --pre nbgrader
+RUN pip2.7 install --pre nbgrader
 
 # Install the nbgrader extensions
 RUN nbgrader extension install

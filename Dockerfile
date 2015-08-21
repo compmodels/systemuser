@@ -3,6 +3,7 @@ FROM jupyter/systemuser
 # Install psychopg2
 RUN apt-get -y install libpq-dev
 RUN pip3.4 install psycopg2
+RUN pip2.7 install psycopg2
 
 # Install terminado
 RUN pip2.7 install terminado

@@ -18,4 +18,4 @@ RUN pip2.7 install --pre nbgrader
 RUN nbgrader extension install
 
 # Create nbgrader profile and add nbgrader config
-ADD nbgrader_config.py /etc/ipython/nbgrader_config.py
+ADD nbgrader_config.py /etc/jupyter/nbgrader_config.py

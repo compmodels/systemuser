@@ -5,6 +5,9 @@ RUN apt-get -y install libpq-dev
 RUN pip3.4 install psycopg2
 RUN pip2.7 install psycopg2
 
+# Install nano
+RUN apt-get -y install nano
+
 # Install terminado
 RUN pip2.7 install terminado
 RUN pip3.4 install terminado

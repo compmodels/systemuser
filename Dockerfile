@@ -1,27 +1,30 @@
 FROM jupyter/systemuser
 
+# Update pip
+RUN pip install --upgrade pip
+
 # Install psychopg2
 RUN apt-get update
 RUN apt-get -y install libpq-dev
-RUN pip3.4 install psycopg2
-RUN pip2.7 install psycopg2
+RUN pip install psycopg2
 
 # Install nano
 RUN apt-get -y install nano
 
 # Install terminado
-RUN pip2.7 install terminado
-RUN pip3.4 install terminado
+RUN pip install terminado
 
 # Install scikit-learn
-RUN pip3.4 install scikit-learn==0.15
+RUN pip install scikit-learn==0.15
 
 # Install widgets
-RUN pip3.4 install ipywidgets
+RUN pip install ipywidgets
+
+# Install plotchecker
+RUN pip install plotchecker
 
 # Install nbgrader
-RUN pip3.4 install --pre nbgrader
-RUN pip2.7 install --pre nbgrader
+RUN pip install nbgrader
 
 # Install the nbgrader extensions
 RUN nbgrader extension install

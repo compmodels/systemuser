@@ -23,6 +23,9 @@ RUN pip install ipywidgets
 # Install plotchecker
 RUN pip install plotchecker
 
+# Install nose
+RUN pip install nose
+
 # Install nbgrader
 RUN pip install nbgrader
 

@@ -15,7 +15,7 @@ RUN apt-get -y install nano
 RUN pip install terminado
 
 # Install scikit-learn
-RUN pip install scikit-learn==0.15
+RUN pip install scikit-learn
 
 # Install widgets
 RUN pip install ipywidgets
